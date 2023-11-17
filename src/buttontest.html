@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Now Button</title>
+    <style>
+        /* Style the anchor element to look like a button */
+        .call-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Use an anchor element with the tel link -->
+<a class="call-button" href="tel:9349369702">Call Now Link </a>
+
+<button onclick="makeCall()">Call Now Button</button>
+
+<script>
+    function makeCall() {
+        // Replace '1234567890' with the actual phone number you want to call
+        var phoneNumber = '1234567890';
+
+        // Use the tel URL scheme to trigger a phone call
+        window.location.href = 'tel:' + phoneNumber;
+    }
+</script>
+
+</body>
+</html>
+
+
